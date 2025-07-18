@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page Creator</title>
+    <link rel="stylesheet" href="style.css">
+<style>body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+main {
+    margin: 20px 0;
+}
+form {
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+button {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+button:hover {
+    background: #218838;
+}</style></head>
+<body>
+    <header>
+        <h1>Landing Page Creator</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Create Your Landing Page</h2>
+            <form id="landing-page-form">
+                <label for="page-title">Page Title:</label>
+                <input type="text" id="page-title" name="page-title" required>
+                <label for="cta-text">Call to Action Text:</label>
+                <input type="text" id="cta-text" name="cta-text" required>
+                <button type="submit">Create Landing Page</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+<script>document.getElementById('landing-page-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Landing page created!');
+});</script></body>
+</html>
